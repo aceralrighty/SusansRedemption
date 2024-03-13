@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://buc18sejex2og"]
+
+[ext_resource type="Texture2D" uid="uid://d3nje3qg7egjv" path="res://Images/jarrett2.jpg" id="1_ejk74"]
+[ext_resource type="Script" path="res://player.gd" id="1_k5b0g"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ififh"]
+radius = 364.09
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_k5b0g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ififh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ejk74")
