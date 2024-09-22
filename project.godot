@@ -12,8 +12,12 @@ config_version=5
 
 config/name="Susan's Redemption"
 run/main_scene="res://player.tscn"
-config/features=PackedStringArray("4.2", "GL Compatibility")
+config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="Susan-s Redemption"
 
 [input]
 
